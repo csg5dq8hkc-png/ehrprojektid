@@ -654,3 +654,160 @@ h2{
     background:rgba(255,255,255,.28);
   }
 }
+
+/* FINAL HERO – sketch-to-real background with guaranteed button contrast */
+.site-header{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  z-index:30;
+  background:transparent;
+  border-bottom:0;
+  backdrop-filter:none;
+}
+.nav-wrap{max-width:1440px; min-height:92px; padding:0 28px;}
+.brand-name{color:#0b1b2f; text-shadow:0 1px 2px rgba(255,255,255,.35);}
+.main-nav a{color:#0b1b2f; font-size:16px; text-shadow:0 1px 2px rgba(255,255,255,.3);}
+.main-nav a:hover{color:#ff951f; opacity:1;}
+.main-nav a:last-child{background:#ff9a2f; color:#0b1b2f; padding:14px 22px; border-radius:6px; font-weight:800; box-shadow:0 8px 22px rgba(7,20,37,.14);}
+
+.hero{
+  min-height:735px;
+  position:relative;
+  overflow:hidden;
+  color:#0b1b2f;
+  background-color:#fff;
+  background-image:url("hero-background.png");
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+.hero-inner{
+  max-width:1440px;
+  min-height:690px;
+  margin:auto;
+  padding:118px 28px 48px;
+  display:block;
+  position:relative;
+  z-index:2;
+}
+.hero-copy{
+  max-width:670px;
+  padding:0;
+  margin:0;
+  background:none;
+  border:0;
+  box-shadow:none;
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+}
+.eyebrow{
+  margin:0 0 26px;
+  color:#f28b22 !important;
+  font-size:13px;
+  letter-spacing:.16em;
+  font-weight:800;
+}
+.hero h1{
+  max-width:680px;
+  margin:0;
+  color:#0b1b2f !important;
+  font-size:clamp(48px,5.2vw,78px);
+  line-height:1.02;
+  letter-spacing:-.045em;
+  text-shadow:0 1px 1px rgba(255,255,255,.35);
+}
+.hero h1 span{color:#0b1b2f !important;}
+.hero-text{
+  max-width:620px;
+  margin:28px 0 0;
+  color:#263a50 !important;
+  font-size:17px;
+  line-height:1.65;
+  font-weight:500;
+}
+.hero-actions{margin-top:34px; display:flex; gap:14px; flex-wrap:wrap;}
+.hero-actions .btn{
+  min-height:56px;
+  padding:0 28px;
+  border-radius:5px;
+  position:relative;
+  z-index:5;
+  font-size:15px;
+  font-weight:800;
+  opacity:1 !important;
+  visibility:visible !important;
+}
+.hero-actions .btn-light{
+  background:#ff9a2f !important;
+  color:#0b1b2f !important;
+  border:1px solid #ff9a2f !important;
+  box-shadow:0 8px 22px rgba(7,20,37,.16);
+}
+.hero-actions .btn-outline{
+  background:#0b1b2f !important;
+  color:#fff !important;
+  border:1px solid #0b1b2f !important;
+  box-shadow:0 8px 22px rgba(7,20,37,.18);
+}
+.hero-actions .btn-outline:hover{background:#152b43 !important; border-color:#152b43 !important;}
+.hero-visual{display:none !important;}
+.hero-features{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:4;
+  max-width:none;
+  margin:0;
+  padding:0 max(28px,calc((100vw - 1440px)/2 + 28px));
+  min-height:78px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  background:rgba(7,20,37,.86) !important;
+  color:#fff;
+}
+.hero-features>div{
+  padding:0 30px 0 0;
+  border-top:0;
+  border-right:1px solid rgba(255,255,255,.25);
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+.hero-features>div:not(:first-child){padding-left:30px;}
+.hero-features>div:last-child{border-right:0;}
+.hero-features span{color:#ff9a2f; font-size:27px; font-weight:800;}
+.hero-features strong{font-size:15px; color:#fff;}
+
+@media (max-width:900px){
+  .site-header{position:absolute;}
+  .nav-wrap{min-height:72px;}
+  .main-nav{
+    top:72px;
+    background:#fff;
+    box-shadow:0 10px 30px rgba(7,20,37,.12);
+  }
+  .hero{
+    min-height:860px;
+    background-size:auto 860px;
+    background-position:center top;
+  }
+  .hero-inner{min-height:790px; padding:115px 20px 110px;}
+  .hero-copy{max-width:620px;}
+  .hero h1{font-size:clamp(43px,8vw,64px);}
+  .hero-features{position:absolute; grid-template-columns:1fr; min-height:0; padding:0 20px;}
+  .hero-features>div,
+  .hero-features>div:not(:first-child){padding:14px 0; border-right:0; border-bottom:1px solid rgba(255,255,255,.18);}
+  .hero-features>div:last-child{border-bottom:0;}
+}
+
+@media (max-width:650px){
+  .brand-name{font-size:12px;}
+  .hero{min-height:900px; background-size:auto 900px;}
+  .hero-inner{min-height:830px; padding:105px 20px 170px;}
+  .hero h1{font-size:44px;}
+  .hero-text{font-size:15px;}
+  .hero-actions .btn{width:100%;}
+}

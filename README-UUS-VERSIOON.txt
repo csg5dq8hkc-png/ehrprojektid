@@ -1,17 +1,13 @@
-EHR PROJEKTID – HERO TAUSTAPILT
+# EHR Projektid – HERO skitseeringust reaalseks majaks
 
-Selles versioonis on hero-pilt pandud kogu hero-ala TAUSTAKS.
-Tekst ei ole pildi sees: HTML-i pealkiri, kirjeldus ja nupud on eraldi
-ning paiknevad taustapildi peal.
+Selles versioonis on hero-taustaks lai skitseeringust realistlikuks majaks üleminev pilt.
 
-Failid:
-- index.html
-- style.css
-- script.js
-- hero-background.png
-- visualiseering.png
-- robots.txt
-- sitemap.xml
-- README-UUS-VERSIOON.txt
+Oluline:
+- hero-background.png on uus lai taustpilt;
+- hero-sketch-real.png on sama pilt varuvariandina;
+- nupud „Küsi pakkumist“ ja „Vaata teenuseid“ on tugeva kontrastiga ja alati nähtavad;
+- vasak pool jääb heledaks, et skitseering oleks nähtav;
+- alumine 01/02/03 riba on tume ja tekst loetav;
+- navigeerimine paikneb hero kohal.
 
-GitHubis asenda index.html ja style.css ning lisa hero-background.png.
+GitHub Pages jaoks lae kõik kaustas olevad failid repo juurkausta.
