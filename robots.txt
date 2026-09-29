@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://ehrprojektid.ee/sitemap.xml
+
+Sitemap: https://csg5dq8hkc-png.github.io/ehrprojektid/sitemap.xml

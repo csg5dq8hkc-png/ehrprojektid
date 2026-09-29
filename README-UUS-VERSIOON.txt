@@ -1,15 +1,22 @@
-EHR PROJEKTID OÜ – UUS VERSIOON
+EHR PROJEKTID – VALMIS UUS VERSIOON
 
-Üleslaadimiseks:
-1. Asenda GitHubis olemasolev index.html selle kaustas oleva index.html failiga.
-2. Asenda style.css selle kaustas oleva style.css failiga.
-3. Asenda script.js selle kaustas oleva script.js failiga.
-4. Lisa GitHubi uus hero-pilt nimega täpselt:
-   hero-sketch-real.png
-5. Jäta olemasolev ehr-logo.png alles.
+ZIP sisaldab:
+- index.html
+- style.css
+- script.js
+- hero-sketch-real.png  <- uus hero-pilt
+- robots.txt
+- sitemap.xml
+- README-UUS-VERSIOON.txt
 
-Tähtis:
-- Hero paremal olev vana maja/tehnosüsteemide pilt on eemaldatud.
-- Uus hero-pilt on seadistatud `object-fit: contain`, seega terviklik skitseeringust valmis majaks üleminev pilt ei lõigata ära.
-- Hero-pildi alla ega peale ei ole lisatud vana teksti „Arhitektuur · tehnosüsteemid · teede projekteerimine”.
-- Teenuste kaartidel ei ole enam vana 01–06 numeratsiooni; numbrid on nüüd ainult väikesed visuaalsed tähised.
+GitHubis:
+1. Laadi need failid üles repo juurkausta.
+2. Ära kustuta olemasolevat ehr-logo.png faili – see jääb kasutusse.
+3. Kui GitHub küsib olemasolevate failide asendamist, vali Replace.
+4. Pärast üleslaadimist oota veidi, kuni GitHub Pages uuesti avaldab.
+
+Oluline:
+- vana hero-pilt on eemaldatud;
+- uus sketch -> valmis maja pilt on juba ZIP-is;
+- hero-pilt kasutab contain-lahendust, et seda ei lõigataks ära;
+- vana "Arhitektuur · tehnosüsteemid · teede projekteerimine" tekst on eemaldatud.
