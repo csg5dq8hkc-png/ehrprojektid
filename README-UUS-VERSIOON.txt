@@ -1,5 +1,8 @@
 EHR PROJEKTID – VALMIS UUS VERSIOON
 
+Selles versioonis on logo eemaldatud.
+Päises on nüüd puhas tekst "EHR PROJEKTID OÜ" ning jaluses ei ole enam logo.
+
 Sisaldab:
 - index.html
 - style.css
@@ -11,10 +14,7 @@ Sisaldab:
 - README-UUS-VERSIOON.txt
 
 GitHubis:
-1. Laadi kõik need failid repo juurkausta.
-2. Jäta olemasolev ehr-logo.png alles.
-3. Asenda olemasolevad index.html, style.css ja script.js.
-4. Lisa/Asenda hero-sketch-real.png ja visualiseering.png.
-5. robots.txt ja sitemap.xml võib samuti asendada.
-
-Lisatud on nüüd ka eraldi VISUALISEERINGUD sektsioon.
+1. Asenda index.html ja style.css.
+2. Asenda/lisa hero-sketch-real.png ja visualiseering.png.
+3. script.js võib samuti asendada.
+4. Olemasolev ehr-logo.png võib alles jääda, kuid veebileht seda enam ei kasuta.
