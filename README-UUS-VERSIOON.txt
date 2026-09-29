@@ -1,20 +1,17 @@
-EHR PROJEKTID – VALMIS UUS VERSIOON
+EHR PROJEKTID – HERO TAUSTAPILT
 
-Selles versioonis on logo eemaldatud.
-Päises on nüüd puhas tekst "EHR PROJEKTID OÜ" ning jaluses ei ole enam logo.
+Selles versioonis on hero-pilt pandud kogu hero-ala TAUSTAKS.
+Tekst ei ole pildi sees: HTML-i pealkiri, kirjeldus ja nupud on eraldi
+ning paiknevad taustapildi peal.
 
-Sisaldab:
+Failid:
 - index.html
 - style.css
 - script.js
-- hero-sketch-real.png
+- hero-background.png
 - visualiseering.png
 - robots.txt
 - sitemap.xml
 - README-UUS-VERSIOON.txt
 
-GitHubis:
-1. Asenda index.html ja style.css.
-2. Asenda/lisa hero-sketch-real.png ja visualiseering.png.
-3. script.js võib samuti asendada.
-4. Olemasolev ehr-logo.png võib alles jääda, kuid veebileht seda enam ei kasuta.
+GitHubis asenda index.html ja style.css ning lisa hero-background.png.

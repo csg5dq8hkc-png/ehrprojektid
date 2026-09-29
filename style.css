@@ -71,13 +71,13 @@ a{color:inherit;text-decoration:none}
   color:#fff;
 }
 .hero-inner{
-  max-width:var(--max);
+  max-width:1440px;
   margin:auto;
   min-height:650px;
-  padding:72px 28px 52px;
+  padding:55px 28px 38px;
   display:grid;
-  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
-  gap:42px;
+  grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);
+  gap:20px;
   align-items:center;
 }
 .hero-copy{padding-bottom:20px}
@@ -130,16 +130,19 @@ a{color:inherit;text-decoration:none}
 
 .hero-visual{
   min-width:0;
+  width:100%;
   display:flex;
   align-items:center;
-  justify-content:center;
+  justify-content:flex-end;
+  overflow:visible;
 }
 .hero-image{
   width:100%;
-  max-height:535px;
+  max-width:850px;
+  max-height:610px;
   height:auto;
   object-fit:contain;
-  object-position:center;
+  object-position:center right;
   border-radius:2px;
   filter:drop-shadow(0 22px 45px rgba(0,0,0,.18));
 }
@@ -431,7 +434,7 @@ h2{
   .hero-inner{padding-top:55px;min-height:auto}
   .hero-copy{padding-bottom:0}
   .hero-visual{order:2}
-  .hero-image{max-height:460px}
+  .hero-image{max-height:460px;max-width:100%}
   .about-panel{min-height:360px}
   .process-heading{display:block}
   .process-heading p{margin-top:15px}
@@ -500,4 +503,42 @@ h2{
 }
 @media (max-width:900px){
   .visual-heading{grid-template-columns:1fr;gap:20px}
+}
+
+/* FULL-WIDTH HERO BACKGROUND */
+.hero{
+  position:relative;
+  overflow:hidden;
+  background-image:
+    linear-gradient(90deg,
+      rgba(7,20,37,.98) 0%,
+      rgba(7,20,37,.94) 24%,
+      rgba(7,20,37,.70) 43%,
+      rgba(7,20,37,.16) 64%,
+      rgba(7,20,37,.02) 100%),
+    url("hero-background.png");
+  background-size:cover;
+  background-position:center right;
+  background-repeat:no-repeat;
+}
+.hero-visual{
+  display:none !important;
+}
+.hero-inner{
+  position:relative;
+  z-index:2;
+  max-width:1440px;
+  min-height:690px;
+  grid-template-columns:1fr;
+  padding:88px 28px 55px;
+}
+.hero-copy{
+  max-width:680px;
+  align-self:center;
+}
+.hero-title{
+  max-width:680px;
+}
+.hero-lead{
+  max-width:610px;
 }
