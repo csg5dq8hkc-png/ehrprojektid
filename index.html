@@ -4,249 +4,204 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="EHR Projektid OÜ – arhitektuursed projektid, hoonete seadustamine, teede projekteerimine, omanikujärelevalve ja visualiseeringud.">
-  <title>EHR Projektid OÜ | Arhitektuursed projektid ja teede projekteerimine</title>
+  <title>EHR Projektid OÜ | Projekt, mis viib mõtte teostuseni.</title>
+  <link rel="icon" href="ehr-logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
 <header class="site-header">
-  <div class="nav-wrap">
-    <a class="brand" href="#top" aria-label="EHR Projektid avaleht">
-      <span class="brand-name">EHR PROJEKTID OÜ</span>
+  <div class="container nav-wrap">
+    <a class="brand" href="#avaleht">
+      <img src="ehr-logo.png" alt="EHR Projektid OÜ logo">
+      <span>EHR PROJEKTID OÜ</span>
     </a>
-
-    <button class="menu-toggle" type="button" aria-label="Ava menüü" aria-expanded="false">
-      ☰
-    </button>
-
-    <nav class="main-nav" aria-label="Põhimenüü">
+    <button class="menu-toggle" aria-label="Ava menüü">☰</button>
+    <nav>
+      <a class="active" href="#avaleht">Avaleht</a>
       <a href="#teenused">Teenused</a>
+      <a href="#projektid">Projektid</a>
       <a href="#meist">Meist</a>
-      <a href="#protsess">Kuidas töötame</a>
-      <a href="#kontakt">Võta ühendust</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
+    <a class="nav-cta" href="#kontakt">Võta ühendust →</a>
   </div>
 </header>
 
-<main id="top">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <p class="eyebrow">EHR PROJEKTID OÜ</p>
-        <h1>Projekt, mis viib<br><span>mõtte teostuseni.</span></h1>
-        <p class="hero-text">
-          Arhitektuurne projekteerimine, hoonete seadustamine,
-          teede projekteerimine ja omanikujärelevalve –
-          selgelt, korrektselt ja praktiliselt.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-light" href="#kontakt">Küsi pakkumist <span>→</span></a>
-          <a class="btn btn-outline" href="#teenused">Vaata teenuseid</a>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <img
-          src="hero-sketch-real.png"
-          alt="Üks maja, mis muutub arhitektuursest eskiisist valmis majaks"
-          class="hero-image"
-        >
+<main>
+<section class="hero" id="avaleht">
+  <div class="hero-bg"></div>
+  <div class="hero-wash"></div>
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <div class="eyebrow"><span></span>EHR PROJEKTID OÜ</div>
+      <h1>Projekt, mis viib<br>mõtte <strong>teostuseni.</strong></h1>
+      <p>Arhitektuurne projekteerimine, hoonete seadustamine, teede projekteerimine ja omanikujärelevalve – selgelt, korrektselt ja praktiliselt.</p>
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="#kontakt">Küsi pakkumist →</a>
+        <a class="btn btn-dark" href="#teenused">Vaata teenuseid</a>
       </div>
     </div>
+  </div>
+  <div class="hero-points">
+    <div><b>01</b><span>Selge lähteülesanne</span></div>
+    <div><b>02</b><span>Korrektsed projektlahendused</span></div>
+    <div><b>03</b><span>Sujuv menetlus ja koostöö</span></div>
+  </div>
+</section>
 
-    <div class="hero-features">
-      <div><span>01</span><strong>Selge lähteülesanne</strong></div>
-      <div><span>02</span><strong>Korrektsed projektlahendused</strong></div>
-      <div><span>03</span><strong>Sujuv menetlus ja koostöö</strong></div>
-    </div>
-  </section>
-
-  <!-- ABOUT / INTRO -->
-  <section class="intro section">
-    <div class="section-label">MIDA ME TEEME</div>
-    <div class="intro-grid">
+<section class="intro section" id="projektid">
+  <div class="container intro-grid">
+    <div>
+      <div class="section-kicker">MIDA ME TEEME</div>
       <h2>Üks partner kogu projekteerimise teekonnal.</h2>
-      <div>
-        <p>
-          EHR Projektid aitab uue hoone ideest, olemasoleva hoone
-          seadustamisest või teedeprojektist jõuda korrektse dokumentatsiooni
-          ja teostatava lahenduseni.
-        </p>
-        <p>
-          Meie töö keskmes on praktiline ja arusaadav koostöö – vaatame koos
-          üle lähteandmed, vajadused ja järgmised sammud ning koostame
-          vajaliku projektlahenduse.
-        </p>
-      </div>
     </div>
-  </section>
+    <div class="intro-text">
+      <p>EHR Projektid aitab uue hoone ideest, olemasoleva hoone seadustamisest või teedeprojektist jõuda korrektse dokumentatsiooni ja teostatava lahenduseni.</p>
+      <p>Meie töö keskmes on praktiline ja arusaadav koostöö – vaatame koos üle lähteandmed, vajadused ja järgmised sammud ning koostame vajaliku projektlahenduse.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- SERVICES -->
-  <section id="teenused" class="services section">
-    <div class="section-label">TEENUSED</div>
-    <div class="section-heading">
-      <h2>Millega saame aidata?</h2>
-      <p>
-        Arhitektuursed projektid, hoonete seadustamine, teede projekteerimine,
-        omanikujärelevalve ning realistlikud visualiseeringud.
-      </p>
+<section class="services section" id="teenused">
+  <div class="container">
+    <div class="section-kicker">TEENUSED</div>
+    <div class="services-heading">
+      <div>
+        <h2>Millega saame aidata?</h2>
+        <p>Arhitektuursed projektid, hoonete seadustamine, teede projekteerimine, omanikujärelevalve ning realistlikud visualiseeringud.</p>
+      </div>
+      <div class="services-mark">EHR<br><span>01—05</span></div>
     </div>
 
     <div class="service-grid">
-      <article class="service-card">
-        <div class="service-icon">01</div>
-        <h3>Arhitektuursed projektid</h3>
-        <p>Üksikelamud, paarismajad, ridaelamud, abihooned ja muud hooned.</p>
+      <article class="service-card card-architecture">
+        <div class="card-visual">
+          <div class="blueprint blueprint-house"></div>
+          <div class="mini-house"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-number">01</div>
+          <h3>Arhitektuursed projektid</h3>
+          <p>Üksikelamud, paarismajad, ridaelamud, abihooned ja muud hooned.</p>
+          <a href="#kontakt">Küsi pakkumist →</a>
+        </div>
       </article>
 
-      <article class="service-card">
-        <div class="service-icon">02</div>
-        <h3>Hoonete ja tehnosüsteemide seadustamine</h3>
-        <p>
-          Aitame koostada vajalikud projektid ja dokumendid ning esitame teie
-          eest ehitusloa taotlused, ehitusteatised ja muud vajalikud menetlused.
-        </p>
+      <article class="service-card card-legal">
+        <div class="card-visual">
+          <div class="document-stack">
+            <i></i><i></i><i></i>
+          </div>
+          <div class="stamp">OK</div>
+        </div>
+        <div class="card-body">
+          <div class="card-number">02</div>
+          <h3>Hoonete ja tehnosüsteemide seadustamine</h3>
+          <p>Aitame koostada vajalikud projektid ja dokumendid ning esitame teie eest ehitusloa taotlused, ehitusteatised ja muud vajalikud menetlused.</p>
+          <a href="#kontakt">Küsi pakkumist →</a>
+        </div>
       </article>
 
-      <article class="service-card">
-        <div class="service-icon">03</div>
-        <h3>Teede projekteerimine</h3>
-        <p>
-          Teede, tänavate, parkimisalade ja muu liiklusruumi projekteerimine
-          ning tehniliste lahenduste koostamine.
-        </p>
+      <article class="service-card card-roads">
+        <div class="card-visual">
+          <div class="road-lines"></div>
+          <div class="road-pin">↗</div>
+        </div>
+        <div class="card-body">
+          <div class="card-number">03</div>
+          <h3>Teede projekteerimine</h3>
+          <p>Teede, tänavate, parkimisalade ja muu liiklusruumi projekteerimine ning tehniliste lahenduste koostamine.</p>
+          <a href="#kontakt">Küsi pakkumist →</a>
+        </div>
       </article>
 
-      <article class="service-card">
-        <div class="service-icon">04</div>
-        <h3>Omanikujärelevalve</h3>
-        <p>
-          Ehitustööde kvaliteedi, projektile vastavuse ja ehitusprotsessi
-          jälgimine ning nõustamine.
-        </p>
+      <article class="service-card card-supervision">
+        <div class="card-visual">
+          <div class="check-grid">
+            <span>✓</span><span>✓</span><span>✓</span>
+          </div>
+          <div class="level-line"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-number">04</div>
+          <h3>Omanikujärelevalve</h3>
+          <p>Ehitustööde kvaliteedi, projektile vastavuse ja ehitusprotsessi jälgimine ning nõustamine.</p>
+          <a href="#kontakt">Küsi pakkumist →</a>
+        </div>
       </article>
 
-      <article class="service-card service-card-wide">
-        <div class="service-icon">05</div>
-        <h3>Visualiseeringud teie ideest</h3>
-        <p>
-          Saame koostada teie soovitud perspektiivist realistliku 3D-visualiseeringu,
-          et näeksite kavandatavat lahendust enne ehitamist.
-        </p>
-        <a href="#kontakt" class="service-link">Küsi visualiseeringu kohta →</a>
+      <article class="service-card service-feature">
+        <div class="feature-image">
+          <img src="visualiseering.png" alt="EHR Projektid 3D-visualiseering">
+          <div class="feature-image-label">IDEEST<br><strong>VISUALISEERINGUNI</strong></div>
+        </div>
+        <div class="feature-copy">
+          <div class="card-number">05</div>
+          <div>
+            <div class="section-kicker">VISUAALNE LAHENDUS</div>
+            <h3>Visualiseeringud teie ideest</h3>
+            <p>Saame koostada teie soovitud perspektiivist realistliku 3D-visualiseeringu, et näeksite kavandatavat lahendust enne ehitamist.</p>
+            <a class="feature-link" href="#kontakt">Küsi visualiseeringu kohta →</a>
+          </div>
+        </div>
       </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- VISUALISEERING -->
-  <section class="visual-section section">
-    <div class="visual-heading">
-      <div>
-        <div class="section-label">VISUALISEERINGUD</div>
-        <h2>Saame teha teie ideest<br>realistliku vaate.</h2>
-      </div>
-      <p>
-        Aitame Teil oma ideed paremini ette kujutada – valmistame
-        realistlikud 3D-vaated hoonest, õuealast ja ümbritsevast keskkonnast.
-      </p>
-    </div>
-
-    <div class="visual-image-wrap">
-      <img src="visualiseering.png"
-           alt="Realistlik 3D-visualiseering üksikelamust, abihoonest, garaažist ja tänavaruumist">
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="meist" class="about section">
-    <div class="about-panel">
-      <div class="about-mark">EHR PROJEKTID</div>
-      <div class="about-word">TEHNILINE<br><span>SELGE.</span></div>
-    </div>
-
-    <div class="about-copy">
-      <div class="section-label">MEIST</div>
+<section class="about section" id="meist">
+  <div class="container about-panel">
+    <div>
+      <div class="section-kicker">MEIST</div>
       <h2>Hea projekt peab olema arusaadav ka väljaspool joonestuslauda.</h2>
-      <p>
-        EHR Projektid OÜ eesmärk on pakkuda projekteerimise valdkonnas
-        praktilist abi, kus tehniline täpsus ja kliendi tegelik vajadus
-        käivad käsikäes.
-      </p>
-      <p>
-        Meie jaoks tähendab hea lahendus seda, et projekt ei jää lihtsalt
-        dokumendiks – see peab aitama kliendil oma järgmise sammu teha.
-      </p>
-
-      <div class="mini-points">
+    </div>
+    <div>
+      <p>EHR Projektid OÜ eesmärk on pakkuda projekteerimise valdkonnas praktilist abi, kus tehniline täpsus ja kliendi tegelik vajadus käivad käsikäes.</p>
+      <p>Meie jaoks tähendab hea lahendus seda, et projekt ei jää lihtsalt dokumendiks – see peab aitama kliendil oma järgmise sammu teha.</p>
+      <div class="about-points">
         <span><b>01</b> Selge suhtlus</span>
         <span><b>02</b> Praktiline lähenemine</span>
         <span><b>03</b> Korrektsed dokumendid</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PROCESS -->
-  <section id="protsess" class="process section">
-    <div class="section-label">TÖÖPROTSESS</div>
-    <div class="process-heading">
-      <h2>Lihtne ja läbipaistev.</h2>
-      <p>Esimesest küsimusest valmis projektini.</p>
-    </div>
-
+<section class="process section">
+  <div class="container">
+    <div class="section-kicker">TÖÖPROTSESS</div>
+    <h2>Lihtne ja läbipaistev.</h2>
+    <p class="process-lead">Esimesest küsimusest valmis projektini.</p>
     <div class="process-grid">
-      <article>
-        <span>01</span>
-        <h3>Räägime läbi</h3>
-        <p>Selgitame välja eesmärgi, olemasoleva olukorra ja vajalikud lähteandmed.</p>
-      </article>
-      <article>
-        <span>02</span>
-        <h3>Koostame lahenduse</h3>
-        <p>Paneme kokku sobiva projektlahenduse ja vajalikud dokumendid.</p>
-      </article>
-      <article>
-        <span>03</span>
-        <h3>Viime lõpuni</h3>
-        <p>Vajadusel aitame ka menetluse ja edasiste sammudega.</p>
-      </article>
+      <div><b>01</b><h3>Räägime läbi</h3><p>Selgitame välja eesmärgi, olemasoleva olukorra ja vajalikud lähteandmed.</p></div>
+      <div><b>02</b><h3>Koostame lahenduse</h3><p>Paneme kokku sobiva projektlahenduse ja vajalikud dokumendid.</p></div>
+      <div><b>03</b><h3>Viime lõpuni</h3><p>Vajadusel aitame ka menetluse ja edasiste sammudega.</p></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CONTACT -->
-  <section id="kontakt" class="contact section">
-    <div class="contact-inner">
-      <div>
-        <div class="section-label">VÕTA ÜHENDUST</div>
-        <h2>On projekt või alles mõte?</h2>
-        <p>
-          Kirjelda lühidalt, millega abi vajad. Vaatame koos,
-          millest oleks kõige mõistlikum alustada.
-        </p>
-      </div>
-
-      <div class="contact-details">
-        <a href="mailto:info@ehrprojektid.ee">
-          <span>E-post</span>info@ehrprojektid.ee
-        </a>
-        <a href="tel:+37255599559">
-          <span>Telefon</span>+372 5559 9559
-        </a>
-        <a class="contact-button" href="mailto:info@ehrprojektid.ee?subject=Projektipäring">
-          Saada päring <span>→</span>
-        </a>
-      </div>
+<section class="contact section" id="kontakt">
+  <div class="container contact-panel">
+    <div>
+      <div class="section-kicker">VÕTA ÜHENDUST</div>
+      <h2>On projekt või alles mõte?</h2>
+      <p>Kirjelda lühidalt, millega abi vajad. Vaatame koos, millest oleks kõige mõistlikum alustada.</p>
     </div>
-  </section>
-
+    <div class="contact-box">
+      <a href="mailto:info@ehrprojektid.ee"><span>E-post</span>info@ehrprojektid.ee</a>
+      <a href="tel:+37255599559"><span>Telefon</span>+372 5559 9559</a>
+      <a class="contact-button" href="mailto:info@ehrprojektid.ee?subject=Projektipäring">Saada päring →</a>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer class="footer">
-  <div class="footer-inner">
-    <p>© EHR Projektid OÜ</p>
-    <a href="#top">Tagasi üles ↑</a>
+<footer>
+  <div class="container footer-inner">
+    <div><strong>EHR PROJEKTID OÜ</strong><br><span>TEHNILINE. SELGE.</span></div>
+    <div>© EHR Projektid OÜ</div>
+    <a href="#avaleht">Tagasi üles ↑</a>
   </div>
 </footer>
 

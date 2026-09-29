@@ -1,13 +1,21 @@
-# EHR Projektid – HERO skitseeringust reaalseks majaks
+# EHR Projektid OÜ – uus veebiversioon
 
-Selles versioonis on hero-taustaks lai skitseeringust realistlikuks majaks üleminev pilt.
+See kaust sisaldab uuendatud `index.html`, `style.css` ja `script.js` faile.
 
-Oluline:
-- hero-background.png on uus lai taustpilt;
-- hero-sketch-real.png on sama pilt varuvariandina;
-- nupud „Küsi pakkumist“ ja „Vaata teenuseid“ on tugeva kontrastiga ja alati nähtavad;
-- vasak pool jääb heledaks, et skitseering oleks nähtav;
-- alumine 01/02/03 riba on tume ja tekst loetav;
-- navigeerimine paikneb hero kohal.
+## Pildid
+Pane sellesse kausta samad pildifailid, mis on praegu GitHubi repos:
+- `ehr-logo.png`
+- `hero-sketch-real.png`
+- `visualiseering.png`
 
-GitHub Pages jaoks lae kõik kaustas olevad failid repo juurkausta.
+`hero-sketch-real.png` on kasutusel kogu hero taustana, mitte eraldi parempoolse pildina.
+Hero vasak pool on tehtud heleda üleminekuga, et skitseering jääks nähtavaks ja tekst oleks loetav.
+Nupud "Küsi pakkumist" ja "Vaata teenuseid" on kontrastsed ning peaksid olema selgelt nähtavad.
+
+## GitHub Pages
+Asenda repos:
+- `index.html`
+- `style.css`
+- `script.js`
+
+Ära kustuta olemasolevaid PNG-faile.
