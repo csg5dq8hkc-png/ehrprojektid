@@ -584,3 +584,73 @@ h2{
   color:#fff;
   border-color:#0b1b2f;
 }
+
+/* HERO REFINEMENT – keep sketch visible and improve contrast */
+.hero{
+  min-height:690px;
+  background-image:
+    linear-gradient(90deg,
+      rgba(255,255,255,.84) 0%,
+      rgba(255,255,255,.80) 20%,
+      rgba(255,255,255,.68) 34%,
+      rgba(255,255,255,.42) 47%,
+      rgba(255,255,255,.14) 61%,
+      rgba(255,255,255,0) 72%),
+    url("hero-background.png");
+  background-size:cover;
+  background-position:center right;
+}
+.hero-copy{
+  max-width:620px;
+  padding:34px 36px 36px;
+  margin-left:0;
+  border-radius:4px;
+  background:rgba(255,255,255,.20);
+  backdrop-filter:blur(1px);
+  -webkit-backdrop-filter:blur(1px);
+}
+.hero h1{
+  color:#0b1b2f;
+  text-shadow:0 1px 2px rgba(255,255,255,.35);
+}
+.hero h1 span{color:#52657b}
+.hero-text{color:#253a50}
+.hero-actions .btn-light{
+  background:#ff9a2f;
+  color:#0b1b2f;
+  border-color:#ff9a2f;
+  box-shadow:0 7px 18px rgba(7,20,37,.12);
+}
+.hero-actions .btn-outline{
+  background:#0b1b2f;
+  color:#fff;
+  border-color:#0b1b2f;
+  box-shadow:0 7px 18px rgba(7,20,37,.16);
+}
+.hero-actions .btn-outline:hover{
+  background:#152b43;
+  border-color:#152b43;
+  color:#fff;
+}
+.hero .feature-strip,
+.hero-features{
+  background:rgba(7,20,37,.72);
+}
+
+@media (max-width:900px){
+  .hero{
+    min-height:760px;
+    background-image:
+      linear-gradient(180deg,
+        rgba(255,255,255,.88) 0%,
+        rgba(255,255,255,.78) 40%,
+        rgba(255,255,255,.30) 67%,
+        rgba(255,255,255,.04) 100%),
+      url("hero-background.png");
+    background-position:center top;
+  }
+  .hero-copy{
+    padding:28px 22px;
+    background:rgba(255,255,255,.28);
+  }
+}
