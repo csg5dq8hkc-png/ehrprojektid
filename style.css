@@ -571,3 +571,16 @@ h2{
     background-position:center top;
   }
 }
+
+/* HERO BUTTON CONTRAST FIX */
+.hero-actions .btn-secondary{
+  background:rgba(7,20,37,.92);
+  color:#fff;
+  border-color:rgba(7,20,37,.92);
+  box-shadow:0 8px 24px rgba(7,20,37,.12);
+}
+.hero-actions .btn-secondary:hover{
+  background:#0b1b2f;
+  color:#fff;
+  border-color:#0b1b2f;
+}
