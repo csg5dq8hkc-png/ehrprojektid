@@ -542,3 +542,32 @@ h2{
 .hero-lead{
   max-width:610px;
 }
+
+/* LIGHT LEFT SIDE – makes the architectural sketch clearly visible */
+.hero{
+  background-image:
+    linear-gradient(90deg,
+      rgba(255,255,255,.97) 0%,
+      rgba(255,255,255,.94) 20%,
+      rgba(255,255,255,.84) 34%,
+      rgba(255,255,255,.52) 46%,
+      rgba(255,255,255,.14) 58%,
+      rgba(255,255,255,0) 70%),
+    url("hero-background.png");
+  background-position:center right;
+}
+.hero h1{color:#0b1b2f}
+.hero h1 span{color:#52657b}
+.hero-text{color:#34475c}
+.hero-copy .eyebrow{color:#f28b22}
+.hero-actions .btn-primary{background:#ff9a2f;color:#0b1b2f;border-color:#ff9a2f}
+.hero-actions .btn-secondary{color:#0b1b2f;border-color:#6d7f92}
+
+@media (max-width:900px){
+  .hero{
+    background-image:
+      linear-gradient(180deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.82) 42%,rgba(255,255,255,.18) 72%,rgba(255,255,255,0) 100%),
+      url("hero-background.png");
+    background-position:center top;
+  }
+}
