@@ -131,3 +131,26 @@ footer{background:var(--navy);color:#fff;padding:38px 0}
   .feature-copy{padding:32px 25px;display:block}.feature-copy .card-number{margin-bottom:10px}
   .about-panel{padding:38px 28px}.footer-inner{flex-direction:column;align-items:flex-start}
 }
+
+/* V3.1 – cleaner service cards: no generic pseudo-images */
+.service-card:not(.service-feature) { overflow:hidden; }
+.service-card:not(.service-feature) .card-body { padding-top: 34px; }
+.service-icon {
+  height: 142px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:
+    linear-gradient(rgba(18,39,63,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18,39,63,.045) 1px, transparent 1px),
+    #f4f7f9;
+  background-size: 32px 32px;
+  border-bottom:1px solid rgba(18,39,63,.10);
+}
+.service-icon svg { width:74px; height:74px; fill:none; stroke:#172d46; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
+.service-icon svg path:nth-last-child(1) { }
+.service-icon-house svg path:first-child,
+.service-icon-road svg path:first-child { stroke:#172d46; }
+.service-icon-doc svg path:last-child { stroke:#ff9f1c; }
+.service-icon-check svg path:last-child { stroke:#ff9f1c; }
+.service-feature .feature-image img { object-position:center 48%; }
