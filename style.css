@@ -132,25 +132,17 @@ footer{background:var(--navy);color:#fff;padding:38px 0}
   .about-panel{padding:38px 28px}.footer-inner{flex-direction:column;align-items:flex-start}
 }
 
-/* V3.1 – cleaner service cards: no generic pseudo-images */
-.service-card:not(.service-feature) { overflow:hidden; }
-.service-card:not(.service-feature) .card-body { padding-top: 34px; }
-.service-icon {
-  height: 142px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:
-    linear-gradient(rgba(18,39,63,.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(18,39,63,.045) 1px, transparent 1px),
-    #f4f7f9;
-  background-size: 32px 32px;
-  border-bottom:1px solid rgba(18,39,63,.10);
-}
-.service-icon svg { width:74px; height:74px; fill:none; stroke:#172d46; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
-.service-icon svg path:nth-last-child(1) { }
-.service-icon-house svg path:first-child,
-.service-icon-road svg path:first-child { stroke:#172d46; }
-.service-icon-doc svg path:last-child { stroke:#ff9f1c; }
-.service-icon-check svg path:last-child { stroke:#ff9f1c; }
-.service-feature .feature-image img { object-position:center 48%; }
+
+/* Final service-card direction: real architectural imagery, not abstract icons */
+.service-grid{gap:20px}
+.service-card.service-photo{min-height:350px;display:block;position:relative;background-color:#fff;background-repeat:no-repeat;background-size:cover;background-position:center;overflow:hidden;border-radius:2px}
+.service-card.service-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.99) 0%,rgba(255,255,255,.96) 31%,rgba(255,255,255,.74) 48%,rgba(255,255,255,.12) 76%,rgba(255,255,255,0) 100%);z-index:0}
+.service-architecture{background-image:url('service-architecture.png')}
+.service-legalization{background-image:url('service-legalization.png')}
+.service-road{background-image:url('service-road.png')}
+.service-supervision{background-image:url('service-supervision.png')}
+.service-number{position:absolute;left:30px;top:27px;z-index:2;color:var(--orange2);font-weight:900;font-size:16px;letter-spacing:.03em}.service-number::after{content:"";display:inline-block;width:44px;border-top:1px solid #aeb9c4;margin:0 0 5px 12px}
+.service-photo .card-body{position:relative;z-index:2;width:59%;padding:70px 28px 35px 30px}.service-photo .card-body h3{font-size:28px;line-height:1.08;margin:0 0 16px;letter-spacing:-.035em}.service-photo .card-body p{font-size:16px;line-height:1.55;margin-bottom:20px}.service-photo .card-body a{font-size:14px;font-weight:850}.service-photo:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(16,35,58,.12)}
+.service-visualisation{grid-column:1/-1;min-height:345px;background-image:url('hero-sketch-real.png');background-position:center right}.service-visualisation::before{background:linear-gradient(90deg,rgba(255,255,255,.99) 0%,rgba(255,255,255,.96) 31%,rgba(255,255,255,.72) 51%,rgba(255,255,255,.10) 78%,rgba(255,255,255,0) 100%)}.service-visualisation .feature-copy{position:relative;z-index:2;width:56%;height:100%;min-height:345px;background:transparent;border:0;padding:70px 30px 40px 55px;display:block}.service-visualisation .feature-copy h3{font-size:38px;line-height:1.08;margin:8px 0 16px}.service-visualisation .feature-copy p{font-size:17px;max-width:570px}.service-visualisation .service-number{left:30px}.service-visualisation .section-kicker{margin-top:0}
+@media(max-width:900px){.service-photo .card-body{width:70%;padding-left:26px}.service-visualisation{grid-column:auto}.service-visualisation .feature-copy{width:75%;padding-left:45px}}
+@media(max-width:560px){.service-card.service-photo{min-height:330px}.service-card.service-photo::before{background:linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.91) 55%,rgba(255,255,255,.20) 100%)}.service-photo .card-body{width:88%;padding:68px 22px 28px}.service-photo .card-body h3{font-size:25px}.service-visualisation .feature-copy{width:90%;padding:68px 25px 30px}.service-visualisation .feature-copy h3{font-size:31px}}
