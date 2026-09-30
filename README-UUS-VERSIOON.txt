@@ -19,3 +19,6 @@ Asenda repos:
 - `script.js`
 
 Ära kustuta olemasolevaid PNG-faile.
+
+
+V2 muudatused: hero visand on nähtavam, intro osa on visuaalselt tugevam, teenusekaartide 01–05 numbrid eemaldatud ning teenus "Hoonete ja tehnosüsteemide seadustamine" on sõnastatud "Hoonete seadustamine".
